@@ -4,7 +4,9 @@
 	box-sizing: border-box;
 	font-size: 13px;
 	font-family: Roboto;
+	list-style: none;
 }
+
 /*** FONT ***/
 @font-face {
   font-family: 'Roboto';
@@ -39,7 +41,6 @@ header {
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
-	list-style: none;
 	margin: 5px;
 }
 .menu li {
@@ -72,12 +73,48 @@ main {
 #googlelogo {
 	margin: 20px;
 }
+form {
+	text-align: center;
+}
 #search-bar {
-	width: 100%;
 	border-radius: 2px;
 	border: none;
 	box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16),0 0 0 1px rgba(0,0,0,0.08);
 	padding: 10px 15px;
 	width: 584px;
 	height: 44px;
+	display: block;
+}
+form button {
+	display: inline-block;
+	margin: 20px 5px;
+	border-radius: 2px;
+	border: 1px solid #f2f2f2;
+	background-image: linear-gradient(#f5f5f5,#f1f1f1);
+	padding: 0 16px;
+	height: 36px;
+	color: #757575;
+}
+
+
+/*** FOOTER ***/
+footer {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	background-image: linear-gradient(#f5f5f5,#f1f1f1);
+	color: #757575;
+}
+.lang, .foot {
+	border-top: 1px solid #e4e4e4;
+}
+.lang p, .foot li {
+	margin: 15px 20px;
+}
+.foot {
+	display: flex;
+	justify-content: space-between;
+}
+.foot ul {
+	display: flex;
 }
